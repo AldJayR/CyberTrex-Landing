@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CyberTrex</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link rel="stylesheet" href="styles.css" />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            'open-sans': ['"Open Sans"', 'sans-serif'],
+                            'roboto': ['Roboto', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="bg-slate-100 fixed w-screen top-0 left-0 right-0 z-10">
+            <nav class="p-4">
+                <div class="flex items-center justify-around">
+                    <h1 class="font-open-sans font-bold text-3xl mr-auto md:ml-5 text-gray-950">CYBER<span class="text-sky-400">TREX</span></h1>
+                    <button class="md:hidden text-cyan-400 focus:outline-none" id="menu-toggle">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <div class="hidden md:flex md:flex-row md:space-x-4 font-semibold font-roboto text-sky-500">
+                        <a href="/" class="hover:underline hover:underline-offset-8 px-8 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Home</a>
+                        <a href="#features" class="hover:underline hover:underline-offset-8 px-8 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Features</a>
+                        <a href="#download" class="hover:underline hover:underline-offset-8 px-8 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Download</a>
+                        <a href="#contact" class="hover:underline hover:underline-offset-8 px-8 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="hidden md:hidden w-full bg-slate-100 font-semibold font-roboto text-sky-500" id="mobile-menu">
+                <div class="flex flex-col space-y-2 p-4">
+                    <a href="/" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Home</a>
+                    <a href="#features" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Features</a>
+                    <a href="#download" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Download</a>
+                    <a href="#contact" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Contact</a>
+                </div>
+            </div>
+        </header>
+        <section class="w-100 md:px-7 mt-16 md:mt-20">
+            <div class="container flex flex-col md:flex-row md:space-x-4 p-8 gap-20 w-full">
+                <div class="md:w-1/2">
+                    <h3 class="font-bold font-roboto text-sky-500 text-4xl leading-snug md:text-6xl md:leading-relaxed w-100">
+                        The Most Trusted CLI Password Manager
+                    </h3>
+                    <p class="font-roboto text-cyan-700 text-lg mt-5">
+                        CyberTrex Password Manager is the best password manager made by college students to help you securely store your passwords and sensitive information in one place.
+                    </p>
+                    <button class="mt-5 bg-cyan-400 hover:bg-cyan-500 py-4 px-8 rounded-full text-white font-open-sans font-semibold">
+                        Download
+                    </button>
+                </div>
+                <div class="hidden md:flex md:w-1/2 items-center justify-center">
+                    <img src="Terminal-512.webp" alt="Person on a computer" class="object-contain w-50 h-auto" />
+                </div>
+
+            </div>
+
+        </section>
+        <main>
+            <section class="bg-slate-100 py-8 px-8 md:px-16">
+                <h4 class="text-center font-open-sans font-semibold text-lg md:text-3xl text-cyan-400">One of the best you'll ever use</h4>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-14 xl:gap-0 mt-20 md:mt-16 justify-items-center">
+                    <div class="relative border-blue-400 max-w-80 md:max-w-auto lg:max-w-80 bg-gray-50 border-4 p-6 rounded-2xl font-roboto text-cyan-700 mt-5">
+                        <div class="flex justify-center absolute -top-16 left-1/2 transform -translate-x-1/2">
+                            <img src="ardee.jpg" alt="Ardee Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20"/>
+                        </div>
+                        <div>
+                            <p class="text-center text-2xl font-semibold mb-3 mt-4">Amiel Ardee Aclan</p>
+                        </div>
+                        <div class="leading-relaxed text-lg">
+                            <p>
+                                "I never knew I needed password managers until now. CyberTrex Password Manager
+                                helped me keep all my accounts secure and to make sure I'll get to access them
+                                even with my forgetful head"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative border-blue-400 shrink-0 max-w-80 md:max-w-auto lg:max-w-80 bg-gray-50 border-4 p-6 rounded-2xl font-roboto min-h-80 text-cyan-700 mt-5">
+                        <div class="flex justify-center absolute -top-16 left-1/2 transform -translate-x-1/2">
+                            <img src="kyle.jpg" alt="Kyle Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20"/>
+                        </div>
+                        <div>
+                            <p class="text-center text-2xl font-semibold mb-3 mt-4">Kyle Mica Fernandez</p>
+                        </div>
+                        <div class="leading-relaxed text-lg">
+                            <p>
+                                "CyberTrex Password Manager makes staying secure online easy.
+                                It handles everything—strong passwords, secure storage,
+                                and secure management wrapped up in a super clean, intuitive design.
+                                Perfect if you want serious security without the hassle."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative border-blue-400 bg-gray-50 max-w-80 md:max-w-auto lg:max-w-80 border-4 p-6 rounded-2xl font-roboto min-h-80 text-cyan-700  mt-5">
+                        <div class="flex justify-center absolute -top-16 left-1/2 transform -translate-x-1/2">
+                            <img src="ian.jpg" alt="Kyle Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20"/>
+                        </div>
+                        <div>
+                            <p class="text-center text-2xl font-semibold mb-3 mt-4">Ian Fajardo</p>
+                        </div>
+                        <div class="leading-relaxed text-lg">
+                            <p>
+                                "CyberTrex Password Manager is your digital fortress! With top-notch encryption,
+                                seamless two-factor authentication, and a sleek design,
+                                it’s perfect for locking down your online world in style."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="bg-white p-4 md:px-16 mt-5">
+                <div class="container mx-auto flex flex-col md:grid md:grid-cols-3 gap-4 px-2 py-4 bg-sky-400 text-white rounded-full text-center w-11/12 md:w-full">
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-shield text-4xl md:text-5xl"></i>
+                        <strong class="mt-2 text-xl md:text-2xl">Powerful encryption</strong>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-vault text-4xl md:text-5xl"></i>
+                        <strong class="mt-2 text-xl md:text-2xl">Convenience</strong>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-key text-4xl md:text-5xl"></i>
+                        <strong class="mt-2 text-xl md:text-2xl">Master Password</strong>
+                    </div>
+                </div>
+            </section>
+            <section id="download">
+                
+            </section>
+
+        </main>
+
+        <script>
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+    </body>
+
+</html>
