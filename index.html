@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <header class="bg-slate-100 fixed w-screen top-0 left-0 right-0 z-10">
+        <header class="bg-slate-100 fixed w-screen top-0 left-0 right-0 shadow-md z-10">
             <nav class="p-4">
                 <div class="flex items-center justify-around">
                     <h1 class="font-open-sans font-bold text-3xl mr-auto md:ml-5 text-gray-950">CYBER<span class="text-sky-400">TREX</span></h1>
@@ -42,11 +42,11 @@
                 </div>
             </nav>
             <div class="hidden md:hidden w-full bg-slate-100 font-semibold font-roboto text-sky-500" id="mobile-menu">
-                <div class="flex flex-col space-y-2 p-4">
-                    <a href="/" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Home</a>
-                    <a href="#features" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Features</a>
-                    <a href="#download" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Download</a>
-                    <a href="#contact" class="hover:underline hover:underline-offset-8 px-2 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Contact</a>
+                <div class="flex flex-col space-y-2">
+                    <a href="/" class="hover:underline hover:underline-offset-8 px-4 py-2 decoration-sky-800 decoration-2 transition hover:duration-300 border-b-2 border-b-sky-500">Home</a>
+                    <a href="#features" class="hover:underline hover:underline-offset-8 px-4 py-2 decoration-sky-800 decoration-2 transition hover:duration-300 border-b-2 border-b-sky-500">Features</a>
+                    <a href="#download" class="hover:underline hover:underline-offset-8 px-4 py-2 decoration-sky-800 decoration-2 transition hover:duration-300 border-b-2 border-b-sky-500">Download</a>
+                    <a href="#contact" class="hover:underline hover:underline-offset-8 px-4 py-2 decoration-sky-800 decoration-2 transition hover:duration-300">Contact</a>
                 </div>
             </div>
         </header>
@@ -59,9 +59,9 @@
                     <p class="font-roboto text-cyan-700 text-lg mt-5">
                         CyberTrex Password Manager is the best password manager made by college students to help you securely store your passwords and sensitive information in one place.
                     </p>
-                    <button class="mt-5 bg-cyan-400 hover:bg-cyan-500 py-4 px-8 rounded-full text-white font-open-sans font-semibold">
+                    <a href="#download" class="mt-5 bg-cyan-400 hover:bg-cyan-500 py-4 px-6 rounded-full text-white font-open-sans font-semibold block w-32">
                         Download
-                    </button>
+                    </a>
                 </div>
                 <div class="hidden md:flex md:w-1/2 items-center justify-center">
                     <img src="Terminal-512.webp" alt="Person on a computer" class="object-contain w-50 h-auto" />
@@ -76,7 +76,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-14 xl:gap-0 mt-20 md:mt-16 justify-items-center">
                     <div class="relative border-blue-400 max-w-80 md:max-w-auto lg:max-w-80 bg-gray-50 border-4 p-6 rounded-2xl font-roboto text-cyan-700 mt-5">
                         <div class="flex justify-center absolute -top-16 left-1/2 transform -translate-x-1/2">
-                            <img src="ardee.jpg" alt="Ardee Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20"/>
+                            <img src="ardee.jpg" alt="Ardee Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20" loading="lazy"/>
                         </div>
                         <div>
                             <p class="text-center text-2xl font-semibold mb-3 mt-4">Amiel Ardee Aclan</p>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="relative border-blue-400 shrink-0 max-w-80 md:max-w-auto lg:max-w-80 bg-gray-50 border-4 p-6 rounded-2xl font-roboto min-h-80 text-cyan-700 mt-5">
                         <div class="flex justify-center absolute -top-16 left-1/2 transform -translate-x-1/2">
-                            <img src="kyle.jpg" alt="Kyle Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20"/>
+                            <img src="kyle.jpg" alt="Kyle Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20" loading="lazy"/>
                         </div>
                         <div>
                             <p class="text-center text-2xl font-semibold mb-3 mt-4">Kyle Mica Fernandez</p>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="relative border-blue-400 bg-gray-50 max-w-80 md:max-w-auto lg:max-w-80 border-4 p-6 rounded-2xl font-roboto min-h-80 text-cyan-700  mt-5">
                         <div class="flex justify-center absolute -top-16 left-1/2 transform -translate-x-1/2">
-                            <img src="ian.jpg" alt="Kyle Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20"/>
+                            <img src="ian.jpg" alt="Ian Icon" class="rounded-full border-2 border-blue-400 object-cover w-20 h-20" loading="lazy"/>
                         </div>
                         <div>
                             <p class="text-center text-2xl font-semibold mb-3 mt-4">Ian Fajardo</p>
@@ -123,7 +123,8 @@
                 </div>
             </section>
             <section id="features" class="bg-white p-4 md:px-16 mt-5">
-                <div class="container mx-auto flex flex-col md:grid md:grid-cols-3 gap-4 px-2 py-4 bg-sky-400 text-white rounded-full text-center w-11/12 md:w-full">
+                <h3 class="text-center text-sky-400 text-3xl mb-6 font-bold font-roboto">FEATURES</h3>
+                <div class="container mx-auto flex flex-col md:grid md:grid-cols-3 gap-12 md:gap-4 px-2 py-10 md:py-4 bg-sky-400 text-white rounded-full text-center w-36 md:w-full">
                     <div class="flex flex-col items-center">
                         <i class="fa-solid fa-shield text-4xl md:text-5xl"></i>
                         <strong class="mt-2 text-xl md:text-2xl">Powerful encryption</strong>
@@ -138,8 +139,34 @@
                     </div>
                 </div>
             </section>
-            <section id="download">
-                
+            <section id="download" class="mt-12 bg-cyan-400 py-6 px-12">
+                <h3 class="text-center text-white text-4xl mb-6 font-bold font-roboto">Downloads</h3>
+                <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-2 text-cyan-600 justify-items-center mt-4">
+                    <div class="text-center bg-white rounded-3xl p-8 shadow-inner">
+                        <span class="text-2xl font-semibold">Open Source C++</span>
+                        <p class="mt-4">Run on your own</p>
+                        <p class="mt-4">Open source</p>
+                        <p class="mt-4">Open to contributions</p>
+                        <p class="mt-4">Licensed under NEUST</p>
+                        <a href="https://github.com/your-repo" class="inline-block bg-cyan-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-cyan-700">Download</a>
+                    </div>
+                    <div class="text-center bg-white rounded-3xl p-8 shadow-inner">
+                        <span class="text-2xl font-semibold">Open Source C++</span>
+                        <p class="mt-4">Run on your own</p>
+                        <p class="mt-4">Open source</p>
+                        <p class="mt-4">Open to contributions</p>
+                        <p class="mt-4">Licensed under NEUST</p>
+                        <a href="https://github.com/your-repo" class="inline-block bg-cyan-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-cyan-700">Download</a>
+                    </div>
+                    <div class="text-center bg-white rounded-3xl p-8 shadow-inner">
+                        <span class="text-2xl font-semibold">Open Source C++</span>
+                        <p class="mt-4">Run on your own</p>
+                        <p class="mt-4">Open source</p>
+                        <p class="mt-4">Open to contributions</p>
+                        <p class="mt-4">Licensed under NEUST</p>
+                        <a href="https://github.com/your-repo" class="inline-block bg-cyan-600 text-white py-2 px-4 mt-4 rounded-lg hover:bg-cyan-700">Download</a>
+                    </div>
+                </div>
             </section>
 
         </main>
